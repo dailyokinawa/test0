@@ -1,0 +1,58 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.recently-added {
+    /* стили для секции с недавно добавленными объявлениями */
+}
+
+.quick-search {
+    /* стили для секции с быстрым поиском */
+}
+
+.company-facts {
+    /* стили для секции с фактами о компании и сайте */
+}
+
+.animal-cards {
+    /* стили для карточек с найденными животными */
+}
+
+.search-form {
+    /* стили для формы поиска */
+}
+
+.reviews {
+    /* стили для секции с отзывами */
+}
+
+.subscribe-form {
+    /* стили для формы подписки */
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
