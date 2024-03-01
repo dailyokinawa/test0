@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница личного кабинета модератора</title>
+<style>
+    .announcement {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+    }
+    .status {
+        margin-left: 10px;
+    }
+	input[type="submit"] {
+        width: 5%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0000FF;
+    }
+</style>
+</head>
+<body>
+<h1>Объявления о найденных животных</h1>
+
+<div>
+    <label for="sort">Сортировать по:</label>
+    <select id="sort">
+        <option value="date">Дата</option>
+        <option value="status">Статус</option>
+    </select>
+</div>
+
+<div id="announcements">
+    <div class="announcement" data-status="активно">
+        <h3>Кот Мурзик</h3>
+		<span class="date">Дата выставления: 1 марта 2024 г.</span>
+        <p>Найден вчера на улице. Очень ласковый.</p>
+        <p>Контактная информация: example@mail.com, Иванов, +7 (123) 456-7890</p>
+		<div style="text-align: left;">
+            <input type="submit" value="Связаться">
+        </div>
+		<p>Район: Белозерский</p>
+        <span class="status">Статус: активно</span>
+        <button onclick="changeStatus(this)">Изменить статус</button>
+    </div>
+    
+    <div class="announcement" data-status="найдено">
+        <h3>Собака Рекс</h3>
+		<span class="date">Дата выставления: 1 января 2023 г.</span>
+        <p>Найден сегодня в парке. Ищем хозяев.</p>
+        <p>Контактная информация: test@mail.com, Петров, +7 (987) 654-3210</p>
+		<div style="text-align: left;">
+            <input type="submit" value="Связаться">
+        </div>
+		<p>Район: Междуреченский</p>
+        <span class="status">Статус: найдено</span>
+        <button onclick="changeStatus(this)">Изменить статус</button>
+    </div>
+    
+    <div class="announcement" data-status="архив">
+        <h3>Хомяк Чарли</h3>
+		<span class="date">Дата выставления: 7 мая 2022 г.</span>
+        <p>Найден вчера. Уже передан в хорошие руки.</p>
+        <p>Контактная информация: contact@mail.com, Сидоров, +7 (111) 222-3333</p>
+		<div style="text-align: left;">
+            <input type="submit" value="Связаться">
+        </div>
+		<p>Район: Устюженский</p>
+        <span class="status">Статус: архив</span>
+        <button onclick="changeStatus(this)">Изменить статус</button>
+    </div>
+</div>
+
+<script>
+    function changeStatus(button) {
+        const announcement = button.parentNode;
+        const currentStatus = announcement.getAttribute('data-status');
+        let newStatus = '';
+        
+        switch(currentStatus) {
+            case 'активно':
+                newStatus = 'найдено';
+                break;
+            case 'найдено':
+                newStatus = 'архив';
+                break;
+            case 'архив':
+                newStatus = 'активно';
+                break;
+            default:
+                break;
+        }
+        
+        announcement.setAttribute('data-status', newStatus);
+        announcement.querySelector('.status').textContent = Статус: ${newStatus};
+    }
+</script>
+
+</body>
+</html>

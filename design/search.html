@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница поиска животных</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 30%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0000FF;
+    }
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="tel"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+	input[type="date"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+	select[class="form-select"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Ищите животных</h2>
+    <form>
+		<label for="img src">Фотографии животного</label>
+		<img src="https://images.wallpaperscraft.ru/image/single/kot_morda_agressiia_56702_3072x2035.jpg" width="400" height="200"/>
+		<select class="form-select" aria-label="Default select example">
+			<option selected>Вид животного</option>
+			<option value="1">Домашние</option>
+			<option value="2">Дикие</option>
+		  </select>
+		<input type="text" placeholder="Имя нашедшего" required><br>
+		<input type="tel" placeholder="Контактный номер нашедшего" required><br>
+		<input type="email" placeholder="Почта нашедшего" required><br>
+		<input type="text" placeholder="Дополнительная информация о животном" required><br>
+		<input type="text" placeholder="Клеймо" required><br>
+		<input type="text" placeholder="Район" required><br>
+		<label for="email">Дата, когда найдено животное:</label>
+		<input type="date" placeholder="Дата, когда найдено животное:" required><br>
+		<div style="text-align: center;">
+            <input type="submit" value="Поиск">
+        </div>
+</div>
+</body>
+</html>

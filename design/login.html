@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница входа в личный кабинет</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 30%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0000FF;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Страница входа</h2>
+    <form>
+        <label for="email">Введите почту:</label>
+        <input type="text" id="email" name="email" placeholder="example@example.com">
+
+        <label for="password">Введите пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Пароль">
+
+        <div style="text-align: center;">
+            <input type="submit" value="Войти">
+        </div>
+    </form>
+    <a href="#">Забыли пароль?</a>
+</div>
+</body>
+</html>

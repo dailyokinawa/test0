@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Страница личного кабинета пользователя</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				background-color: #f4f4f4;
+			}
+			.container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+			input {
+				width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+			}
+			input[type="submit"] {
+        width: 30%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0000FF;
+    }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h2>Личный кабинет</h2>
+		<form>
+			<input type="tel" placeholder="Номер телефона" required><br>
+			<div style="text-align: center;">
+				<input type="submit" value="Изменить">
+			</div>
+			<input type="number" placeholder="Количество добавленных объявлений" required><br>
+			<input type="number" placeholder="Количество животных, которые вернулись к хозяевам" required><br>
+			<label for="date">Дата регистрации:</label>
+			<input type="date" placeholder="Дата регистрации" required><br>
+			<input type="number" placeholder="Дней с момента регистрации" required><br>
+			<input type="text" placeholder="Объявление, созданные на сайте" required><br>
+		</form>
+	</div>
+	</body>
+</html>

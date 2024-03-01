@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Страница добавления информации о найденном животном</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 30%;
+        padding: 10px;
+        margin: 5px 0;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0000FF;
+    }
+    input[type="email"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    input[type="tel"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+	input[type="date"] {
+        width: 95%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+	select[class="form-select"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Выставьте своё объявление</h2>
+    <form>
+		<input type="tel" placeholder="Введите номер телефона" required><br>
+		<input type="email" placeholder="Введите почту" required><br>
+		<div style="text-align: center;">
+            <input type="submit" value="Регистрация">
+        </div>
+		<select class="form-select" aria-label="Default select example">
+			<option selected>Вид животного</option>
+			<option value="1">Домашние</option>
+			<option value="2">Дикие</option>
+		  </select>
+		<label for="file">Прикрепите фотографии животного</label>
+		<input type="file" placeholder="Прикрепите фотографии животного" required><br>
+		<input type="text" placeholder="Дополнительная информация" required><br>
+		<input type="text" placeholder="Клеймо" required><br>
+		<input type="text" placeholder="Район" required><br>
+		<label for="email">Дата, когда найдено животное:</label>
+		<input type="date" placeholder="Дата, когда найдено животное:" required><br>
+		<div style="text-align: center;">
+            <label><input type="checkbox" required> Даю согласие на обработку персональных данных</label><br>
+        </div>
+    </form>
+	<div style="text-align: center;">
+		<input type="submit" value="Отправить">
+	</div>
+</div>
+</body>
+</html>
